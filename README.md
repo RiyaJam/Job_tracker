@@ -1,42 +1,66 @@
-# Job Application Tracker
+# JobTracker 💼
 
-A full-stack web application to track job applications, built with Node.js, Express, SQLite, and React (Vite).
+A modern, full-stack web application designed to help job seekers efficiently manage, track, and organize their application process. Built with a premium, responsive user interface and a lightweight, zero-configuration backend.
 
-## Prerequisites
+## 🌟 Features
 
-- **Node.js** (v16+ recommended) and **npm** installed on your system.
-*(That's it! No complex databases to install).*
+- **Intuitive Dashboard:** A beautiful overview of your job search progress with quick-glance metrics.
+- **Application Management:** Add, edit, and delete job applications with ease.
+- **Status Tracking:** Keep track of where you are in the process (Applied, Interview, Offer, Rejected, Withdrawn).
+- **Interactive Filtering:** Quickly filter your application list based on current status.
+- **Modern UI/UX:** Built with a premium "glassmorphism" aesthetic, rich gradients, micro-animations, and fully responsive design.
 
-## Setup Instructions
+## 🛠️ Tech Stack
 
-### 1. Backend Setup (Node.js + SQLite)
+**Frontend:**
+- React (Vite)
+- Tailwind CSS v4
+- Lucide React (Icons)
+- Axios
 
-1. Navigate to the `backend` directory:
+**Backend:**
+- Node.js & Express
+- SQLite (Zero-configuration relational database)
+
+## 🚀 Getting Started
+
+To run this project locally, you don't need any complex database setups. SQLite handles everything out of the box!
+
+### Prerequisites
+
+- [Node.js](https://nodejs.org/) (v16 or higher) installed on your machine.
+- Git
+
+### Installation
+
+1. **Clone the repository:**
+   ```bash
+   git clone https://github.com/yourusername/job-tracker.git
+   cd job-tracker
+   ```
+
+2. **Start the Backend Server:**
+   Open a terminal and navigate to the backend directory:
    ```bash
    cd backend
-   ```
-2. Start the Node.js server (it will automatically create the SQLite database for you):
-   ```bash
+   npm install
    npm start
    ```
-   *The backend server will start on `http://localhost:5000`.*
+   *The server will start on `http://localhost:5000` and automatically create the SQLite database file for you.*
 
-### 2. Frontend Setup (React + Vite)
-
-1. Open a **new terminal** and navigate to the `frontend` directory:
+3. **Start the Frontend Application:**
+   Open a **new** terminal and navigate to the frontend directory:
    ```bash
    cd frontend
-   ```
-2. Start the Vite development server:
-   ```bash
+   npm install
    npm run dev
    ```
-   *The frontend will typically start on `http://localhost:5173` (or `3000`). Click the link in the terminal to open it in your browser.*
+   *The frontend will start on `http://localhost:5173`. Open this link in your browser to view the app!*
 
-## Features
+## 🤝 Contributing
 
-- **Zero-Config Database**: Uses SQLite to store your data locally without any setup.
-- **Dashboard**: Quick view of total applications and statuses.
-- **CRUD Operations**: Add, Edit, Delete, and View job applications.
-- **Filtering**: Easily filter applications by their current status (e.g., Applied, Interview, Offer).
-- **Clean UI**: Simple, responsive interface built with Tailwind CSS.
+Contributions, issues, and feature requests are welcome!
+
+## 📝 License
+
+This project is open-source and available under the MIT License.

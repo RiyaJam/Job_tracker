@@ -1,6 +1,6 @@
-# JobTracker 💼
+# JobTracker 💼 (Java & Spring Boot Edition)
 
-A modern, full-stack web application designed to help job seekers efficiently manage, track, and organize their application process. Built with a premium, responsive user interface and a lightweight, zero-configuration backend.
+A modern, full-stack web application designed to help job seekers efficiently manage, track, and organize their application process. Built with a premium React frontend and an enterprise-grade Java backend.
 
 ## 🌟 Features
 
@@ -19,48 +19,45 @@ A modern, full-stack web application designed to help job seekers efficiently ma
 - Axios
 
 **Backend:**
-- Node.js & Express
-- SQLite (Zero-configuration relational database)
+- Java 17
+- Spring Boot 3 (Web, Data JPA)
+- H2 Database (Zero-configuration in-memory SQL database)
 
 ## 🚀 Getting Started
 
-To run this project locally, you don't need any complex database setups. SQLite handles everything out of the box!
-
 ### Prerequisites
+- Node.js (v16 or higher)
+- Java 17 (JDK)
+- An IDE (IntelliJ IDEA, Eclipse, or VS Code with Java extensions)
 
-- [Node.js](https://nodejs.org/) (v16 or higher) installed on your machine.
-- Git
+### Database Setup
+None! This project uses an H2 in-memory database. Spring Boot will automatically create the database and tables the moment you start the app. You can even view the database visually by going to `http://localhost:8080/h2-console` in your browser (Username: `sa`, Password: `[leave blank]`).
 
-### Installation
+### Backend Setup
+We have bundled a **Maven Wrapper** with this project, so you don't even need Maven installed on your computer to run the Java code!
 
-1. **Clone the repository:**
-   ```bash
-   git clone https://github.com/yourusername/job-tracker.git
-   cd job-tracker
-   ```
-
-2. **Start the Backend Server:**
-   Open a terminal and navigate to the backend directory:
+1. Open a terminal and navigate to the backend directory:
    ```bash
    cd backend
-   npm install
-   npm start
    ```
-   *The server will start on `http://localhost:5000` and automatically create the SQLite database file for you.*
-
-3. **Start the Frontend Application:**
-   Open a **new** terminal and navigate to the frontend directory:
+2. Run the Spring Boot server using the wrapper:
    ```bash
-   cd frontend
-   npm install
-   npm run dev
+   .\mvnw.cmd spring-boot:run
    ```
-   *The frontend will start on `http://localhost:5173`. Open this link in your browser to view the app!*
+*(The server will download dependencies on the first run, automatically create the H2 database, and start on `http://localhost:8080`)*
 
-## 🤝 Contributing
+### Frontend Setup
+Open a terminal and navigate to the frontend directory:
+```bash
+cd frontend
+npm install
+npm run dev
+```
+*The frontend will start on `http://localhost:5173`. Open this link in your browser to view the app!*
 
-Contributions, issues, and feature requests are welcome!
+## 📸 Screenshots
+
+*(Add screenshots of your dashboard and application form here before uploading to GitHub to make your resume project stand out even more!)*
 
 ## 📝 License
-
 This project is open-source and available under the MIT License.
